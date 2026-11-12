@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#00210e", "on-error": "#ffffff", "surface-tint": "#376847", "outline-variant": "#c1c9bf", "tertiary-container": "#9c653b", "on-primary-fixed-variant": "#1e5031", "tertiary": "#804d26", "primary-fixed": "#b9efc5", "inverse-primary": "#9dd3aa", "inverse-on-surface": "#f3f0ea", "on-primary-container": "#e1ffe5", "surface-container": "#f0eee7", "on-secondary-fixed-variant": "#2c4e34", "surface-container-highest": "#e5e2db", "on-primary": "#ffffff", "error-container": "#ffdad6", "background": "#fcf9f2", "tertiary-fixed": "#ffdcc5", "secondary-fixed": "#c5ecc9", "surface-dim": "#dcdad3", "primary-fixed-dim": "#9dd3aa", "surface-container-high": "#ebe8e1", "surface-container-low": "#f6f3ec", "primary": "#316342", "secondary-container": "#c5ecc9", "primary-container": "#4a7c59", "secondary": "#44664b", "surface": "#fcf9f2", "on-secondary": "#ffffff", "inverse-surface": "#31312c", "error": "#ba1a1a", "on-secondary-container": "#4a6c50", "on-background": "#1c1c18", "on-error-container": "#93000a", "secondary-fixed-dim": "#aad0ae", "surface-bright": "#fcf9f2", "on-tertiary-container": "#fff6f2", "surface-variant": "#e5e2db", "on-secondary-fixed": "#00210c", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#6a3b15", "surface-container-lowest": "#ffffff", "outline": "#717971", "on-tertiary-fixed": "#301400", "on-surface-variant": "#414942", "tertiary-fixed-dim": "#fcb887", "on-surface": "#1c1c18" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-md": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1.25rem", "gutter": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter-md": "1.5rem", "margin-lg": "3.5rem", "gutter-lg": "2rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "body-md": ["DM Sans"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-lg": ["DM Sans"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], "title-md": ["DM Sans"], "label-sm": ["DM Sans"] }, fontSize: { "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Mais Saúde Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCzEmfbCrO409lOpCx_I0fX8Jt-jmxyjY4zJid5tWPYm5yO73wKeUT7rs0jgarlnGJh-K-0LAOIeCbPP1r4USyompsFvnhbXhABLW9AFizh4xTDKmlhzvCiii5bsT-rsZLz2emXLZilaqEibLXZfcxdNAX8d_O_zsR0FmtKzQO_m00sLcO9QLMprO58VJHzW1hzjUj0aRplxh8mpHeRIptMzv6o_ABgypgriz2CAfHG"><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-none">Mais Saúde</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Cáceres - MT</span></div></div><div class="flex items-center gap-space-sm"><a class="h-10 px-space-md bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-full flex items-center gap-space-xs transition-colors" href="https://wa.me/5565999999999" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="hidden xs:inline">WhatsApp</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative px-margin pt-space-lg pb-space-xl flex flex-col gap-space-lg overflow-hidden">
+<!-- Subtle organic background aura -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-16 w-52 h-52 bg-primary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Location pill badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container-high rounded-full self-start shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">spa</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wide">Produtos Naturais no Centro de Cáceres</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-balance">
+        Comece a cuidar de você com o que a natureza tem de melhor.
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Produtos naturais, chás, grãos a granel e opções saudáveis para quem quer emagrecer com leveza e comer melhor todos os dias, no centro de Cáceres.
+      </p>
+<!-- Primary Action CTA -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="relative group flex items-center justify-center gap-space-sm h-14 px-space-xl bg-primary text-on-primary font-title-md text-title-md rounded-full shadow-[0_10px_25px_-5px_rgba(49,99,66,0.35)] transition-all transform active:scale-95" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20para%20escolher%20produtos%20naturais%20e%20emagrecer%20com%20sa%C3%BAde." rel="noopener noreferrer" target="_blank">
+<span class="absolute inset-0 rounded-full bg-primary-fixed opacity-0 group-hover:opacity-20 transition-opacity animate-pulse"></span>
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span>Quero ajuda no WhatsApp</span>
+</a>
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[16px]">local_shipping</span>
+<span class="font-label-sm text-label-sm">Retirada na loja ou entrega · Aberto até às 18h</span>
+</div>
+</div>
+<!-- Social Proof Badge -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-2xl shadow-sm mt-space-xs">
+<div class="flex -space-x-2 shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close-up portrait of a smiling woman from Mato Grosso with natural gentle lighting outdoors, representing a happy Cáceres natural food client" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2bG5o34E_cXWVrLbn35-lujPp5lmumONQh5kPoZGZVNCvklIO8OB36wC8okfPXYCyrQOTbV_rN32gu6tfs6epYvJ61Pse9mL82iugyu71bT8IFkDH7j5Ptb16lfvUeCKPvbSoghwNFUV_spAWPJChsTMQcwCPiM36KiTiJ4GszR09O4pYn7jXBPp3OxZnhAdopL2yJsHxMKGpslKyI2387OesH5NHHS16JhGeiAk">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Portrait of a friendly mature customer smiling warmly in daylight with warm neutral background, customer of natural wellness store" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsDXZ9lwqgmWOiE1U8ny1DL0Oe3swHNty5XkTaYq3wp4SwqbyYgnol63D4e-eHiL8dwg3pL0X8f9cH53A0BkPEIFsjCI5xJojHh92hI7vXUq10BooBkRGbznJUun2qRvmKYqBLiYxh6RKWi4-YU5NV-ZbvTWs4pxU0-5KOET8TZaPI1LojNI_uKRcsZTxrEU_BNcQPwJK8AwtX_7W0wvVG0p2J44dUuS_GZk6pGg0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Smiling young adult woman with healthy glow in an organic lifestyle natural setting Cáceres MT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBhmWavNDUfYdaLheKboMTQAx33wjyP39xy01lhFFnr_m5csj1Os6Yx1NMpBe07UCzY09l3a6ofXOPN3o8h3X2jrg-W0IKg3DAQWAB-Y_hOPqAkcQ6sTY9HJl1UVzdYnrvOZYpi4Mt3CLCX1Zbgp88fmgLraxx9T8gPxqeBkK1vrt41itukEvOZs_F2rfEsOeklegh135yJ39mzO41dgTZDsyw1ZMEwZLhDIqLSvw">
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-0.5 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold leading-tight">Nota 4,8 no Google · 71 avaliações</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clientes reais de Cáceres - MT</span>
+</div>
+</div>
+</div>
+<!-- Hero Composition Image -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-md bg-surface-container-high aspect-[4/3] mt-space-xs">
+<img class="w-full h-full object-cover" data-alt="Aesthetic artisanal still life with glass jars filled with golden flaxseeds, chia, and raw rolled oats, alongside a clear glass cup of steaming amber herbal tea, fresh mint leaves, and cinnamon sticks resting on a warm wooden pantry counter illuminated by soft morning sunlight in Cáceres MT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeOCRY2qFzmhr-ckUEkkjlaASUz7VSi9rJM370srWiTKPSVbzpGzU0n8VsmSHk-Cxh_YWPxtnOHYNAaG2xYX1ln2M_D5-sS1wvz1cPphZtEP8lGeeCOKhKI7UhomWMd7NyWEe-SNEPm4eYo3BF3USWI-1_t73W21fzdvn_Qq4QfSsppnvPdGt9MiMDIT4T-ng5skKiYxDdGzK9fPUixo1-eZ13Hlh1rvyd8J9fKeg">
+<div class="absolute bottom-3 left-3 right-3 p-space-sm bg-surface/90 backdrop-blur-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">100% Puro &amp; Fresco a Granel</span>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full">Centro</span>
+</div>
+</div>
+</section><section class="mx-margin my-space-sm p-space-md bg-surface-container-low rounded-2xl border border-secondary-container flex flex-col gap-space-sm shadow-sm"><div class="grid grid-cols-1 gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-secondary-container text-[20px]">electric_moped</span></div><div class="flex flex-col"><span class="font-title-md text-body-md font-semibold text-on-surface">Entrega Expressa no Mesmo Dia</span><span class="font-body-sm text-label-sm text-on-surface-variant">Peça até às 16h no WhatsApp e receba em casa em qualquer bairro de Cáceres.</span></div></div><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary-fixed-variant text-[20px]">storefront</span></div><div class="flex flex-col"><span class="font-title-md text-body-md font-semibold text-on-surface">Sem Pedido Mínimo no Balcão</span><span class="font-body-sm text-label-sm text-on-surface-variant">Passe na loja e leve a partir de 50g fresquinho ou retire seu pacote pronto.</span></div></div><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[20px]">verified</span></div><div class="flex flex-col"><span class="font-title-md text-body-md font-semibold text-on-surface">Frescor &amp; Embalagem Hermética</span><span class="font-body-sm text-label-sm text-on-surface-variant">Pesados na hora com máxima higiene para conservar sabor e aroma.</span></div></div></div></section>
+<!-- SECTION: DOR E DESEJO (Warm gentle mint canvas) -->
+<section class="px-margin py-space-xl bg-surface-container-low mx-margin rounded-[32px] flex flex-col gap-space-lg shadow-sm"><div class="flex flex-col gap-space-xs"><div class="inline-flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">inventory_2</span><span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Praticidade Máxima</span></div><h2 class="font-headline-md text-headline-md text-on-surface">Kits &amp; Combos Mais Pedidos</h2><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Combinações balanceadas com desconto exclusivo para facilitar o seu dia a dia.</p></div><div class="flex flex-col gap-space-md"><div class="p-space-lg bg-surface rounded-2xl shadow-sm border border-secondary-container/50 flex flex-col gap-space-sm relative overflow-hidden"><div class="flex items-center justify-between"><span class="px-space-sm py-0.5 bg-primary text-on-primary font-label-sm text-label-sm font-bold rounded-full">Mais vendido em Cáceres</span><span class="font-title-md text-title-md text-primary font-bold">R$ 39,90</span></div><div class="flex flex-col"><h3 class="font-title-md text-title-md text-on-surface">Kit Desinchaço Pantaneiro</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Blend de Cavalinha pura (100g) + Hibisco Flor Inteira (100g) + Chá Verde em folhas (80g) + Guia de preparo prático.</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Zero Açúcar</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Rende 30 dias</span><span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm">Diurético</span></div><a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20o%20Kit%20Desincha%C3%A7o%20Pantaneiro." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Pedir Kit no WhatsApp</span></a></div><div class="p-space-lg bg-surface rounded-2xl shadow-sm border border-secondary-container/50 flex flex-col gap-space-sm relative overflow-hidden"><div class="flex items-center justify-between"><span class="px-space-sm py-0.5 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold rounded-full">Queridinho da semana</span><span class="font-title-md text-title-md text-primary font-bold">R$ 48,00</span></div><div class="flex flex-col"><h3 class="font-title-md text-title-md text-on-surface">Combo Fibras &amp; Saciedade</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Psyllium Puro Importado (150g) + Chia em grãos (150g) + Aveia Laminada Grossa (250g) + Linhaça Dourada (150g).</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Intestino Feliz</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Saciedade Total</span></div><a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20o%20Combo%20Fibras%20e%20Saciedade." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Pedir Combo no WhatsApp</span></a></div><div class="p-space-lg bg-surface rounded-2xl shadow-sm border border-secondary-container/50 flex flex-col gap-space-sm relative overflow-hidden"><div class="flex items-center justify-between"><span class="px-space-sm py-0.5 bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold rounded-full">Energia &amp; Trabalho</span><span class="font-title-md text-title-md text-primary font-bold">R$ 44,50</span></div><div class="flex flex-col"><h3 class="font-title-md text-title-md text-on-surface">Kit Lanches Saudáveis da Semana</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Castanha-do-Pará inteira fresca (100g) + Nozes Chilenas (100g) + Damasco Turco (100g) + Mix crocante sem sal (150g).</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Gorduras Boas</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Pronto p/ Levar</span></div><a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20o%20Kit%20Lanches%20Saud%C3%A1veis." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Pedir Kit no WhatsApp</span></a></div></div></section><section class="px-margin py-space-xl bg-secondary-container/50 rounded-[32px] mx-margin my-space-sm flex flex-col gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Nutrição Sem Radicalismo</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Cansada de dietas que não duram?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Emagrecer não precisa ser sofrido. Com escolhas simples no dia a dia, como mais fibras, chás, grãos e alimentos de verdade, fica mais fácil criar uma rotina que você consegue manter.
+      </p>
+</div>
+<!-- 3 Core Highlights -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-[24px]">nutrition</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Escolhas mais saudáveis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Diga adeus às restrições severas. Descubra combinações nutritivas e saborosas que saciam com sabor de verdade.
+          </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Atendimento que orienta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Nossa equipe tira suas dúvidas no WhatsApp com carinho e indica exatamente o que funciona para a sua rotina pantaneira.
+          </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant text-[24px]">scale</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Sem complicação</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Compre a granel na quantidade exata que precisa para o seu bolso e sua semana, sem desperdício e sempre fresquinho.
+          </p>
+</div>
+</div>
+</div>
+<!-- Micro-CTA contextual -->
+<div class="pt-space-xs flex justify-center">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant font-bold" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20uma%20orienta%C3%A7%C3%A3o%20sem%20dietas%20malucas." rel="noopener noreferrer" target="_blank">
+<span>Fale com uma atendente agora</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- CATEGORIAS DE PRODUTOS MAIS PROCURADAS -->
+<section class="px-margin py-space-xl flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="inline-flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">local_cafe</span><span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Guia da Erva ao Copo</span></div><h2 class="font-headline-md text-headline-md text-on-surface">Nossos Chás Mais Queridos</h2><p class="font-body-md text-body-md text-on-surface-variant">Entenda de forma rápida o uso tradicional de cada erva e escolha a ideal para você:</p></div><div class="flex flex-col gap-space-sm"><div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-md"><div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">spa</span></div><div class="flex flex-col gap-0.5 flex-grow min-w-0"><div class="flex items-center justify-between"><span class="font-title-md text-body-md font-semibold text-on-surface">Hibisco Flor Inteira</span><span class="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full">Desinchaço</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Rico em antocianinas, excelente ação diurética natural contra a retenção de líquidos.</span></div></div><div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-md"><div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">grass</span></div><div class="flex flex-col gap-0.5 flex-grow min-w-0"><div class="flex items-center justify-between"><span class="font-title-md text-body-md font-semibold text-on-surface">Cavalinha Pura</span><span class="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full">Drenagem &amp; Minerais</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Ajuda na eliminação de toxinas e é rica em silício, fortalecendo unhas e cabelos.</span></div></div><div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-md"><div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary-container text-[20px]">healing</span></div><div class="flex flex-col gap-0.5 flex-grow min-w-0"><div class="flex items-center justify-between"><span class="font-title-md text-body-md font-semibold text-on-surface">Canela de Velho</span><span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm rounded-full">Conforto &amp; Articulações</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Tradicionalmente utilizada para alívio articular e ação anti-inflamatória natural.</span></div></div><div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">nightlight</span></div><div class="flex flex-col gap-0.5 flex-grow min-w-0"><div class="flex items-center justify-between"><span class="font-title-md text-body-md font-semibold text-on-surface">Camomila Flor Pura</span><span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-full">Calmante &amp; Digestiva</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Flores inteiras selecionadas, perfeita para desacelerar à noite e aliviar a digestão.</span></div></div><div class="p-space-md bg-surface-container-lowest rounded-2xl shadow-sm flex items-start gap-space-md"><div class="w-10 h-10 rounded-full bg-primary-container/40 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[20px]">bolt</span></div><div class="flex flex-col gap-0.5 flex-grow min-w-0"><div class="flex items-center justify-between"><span class="font-title-md text-body-md font-semibold text-on-surface">Chá Verde Folhas</span><span class="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-label-sm rounded-full">Termogênico Leve</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Acelera a disposição diária e combate os radicais livres com alto poder antioxidante.</span></div></div></div><div class="pt-space-xs flex justify-center"><a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant font-bold" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20tirar%20d%C3%BAvidas%20sobre%20os%20ch%C3%A1s%20e%20fazer%20um%20pedido." rel="noopener noreferrer" target="_blank"><span>Pedir ervas e chás no WhatsApp</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></section><section class="px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">grocery</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Variedade &amp; Frescor</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Categorias Mais Procuradas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Tudo o que seu corpo precisa para desinchar, ter energia e viver bem.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: Chás & Infusões -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Top down photo of diverse natural dried herbs for tea including deep red hibiscus flowers, bright green tea leaves, chamomile blossoms and horsetail cavalinha arranged in wooden bowls in Cáceres MT natural market" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvvCyoz0sxBSsQTG93X1BSyWLK9Pe_tLMkQ41RaK8JRsa0VVTTJCtVJwvdmjCF6gZFzaQ2MiXMBp-vrP7Nc6pvr2K3OT3rTPV8amw3WDL7GOnBOiJYkKaUTm94ZsJBZWZEkP5e5gxjA1wzrxGxTJIjOqxH2kC-tE4tOUAZoHVnctRelohUtgn9fVJbkI3HG1eETJ0X0X-_QkuKBfilX2pGbFKvbG5kpiOAR5dulpw">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Emagrecimento natural
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Chás &amp; Infusões Funcionais</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Hibisco puro, Chá Verde, Cavalinha, Camomila calmante e blends diuréticos perfeitos para eliminar retenção de líquidos.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Desincha</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Digestivo</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">A granel</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Ch%C3%A1s%20e%20Infus%C3%B5es%20da%20Mais%20Sa%C3%BAde." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Grãos, Sementes & Fibras -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Rustic glass jars filled with whole psyllium husk fiber, chia seeds, golden flaxseed and rolled oat flakes in warm natural light on an organic pantry counter in Cáceres" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3R72xbifSafe_HQGsyA73ASjnMiLPBmiwjxIhZEV_DHHJOyZlRnWlllF5vwc68qRhJj6nyWQw5-KFSIsnzk1-xZc4cf8fYT1jFzhWetILTK7kYrH9yQubfytAi9514S1KHMxE5DmsRZS7IYA4vJLJLv_UIE8tVvXWWwYUUfVMVVRoRuCMQAIxADPlPCFRuQc7En_5Fc1cdcLZtABAQ80efBtLP-GT4Mx7EescdrU">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Mais pedido
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Grãos, Sementes &amp; Fibras</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Aveia laminada grossa, Chia, Linhaça dourada, Quinoa real e o consagrado Psyllium puro para saciedade prolongada.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Saciedade</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Intestino Regular</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Gr%C3%A3os%20e%20Fibras%20(Psyllium,%20Aveia,%20Chia)." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Snacks & Castanhas Selecionadas -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Generous bowl overflowing with freshly harvested whole Brazil nuts Castanha-do-Pará, walnut halves, raw almonds and unsalted functional seed mix bathed in sunny Cáceres afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8JgtuEr9TNElmhhXIqMi9KZ3WXF4slgp1edRZBru0_V_epZ5B9XpYKanl5-l40qWL1gOFb_qdCroKJFjpNWASLNW4-1BWyltQrN-Qvx7fnx_4_iczKIPn0OuaMTBEYN2PGSpSSJAt46g3cstUjN4uTdVBKdyu5ynG9zQfqvhTtQw9vtwFiPtPmQvmJqoFUgYCsIT_5X--B79eXwszslGuVtOu9ZJQayK6dwWXDTQ">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-tertiary font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Fresco a granel
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Snacks &amp; Castanhas Selecionadas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Castanha-do-Pará fresca crocante, Nozes chilenas, Amêndoas torradas e Mix funcional sem sal para lanches práticos e rápidos.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Gorduras Boas</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Crocante</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20pedir%20Castanhas%20fresquinhas%20e%20snacks." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Linha Zero Açúcar & Low Carb -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Natural sweeteners like stevia drops, almond flour, natural cocoa powder and dark 70 percent chocolate chunks on organic ceramic plates in a warm cozy health kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEY1AKTkcF3ZnO0nYzTeEW2SJK8BaAT_tbn6juNhbiEFwIcJs6kCRWYDBuYopMoQOgyWmNqiIXUeST-DcjBqXeXz4v2TNxh5dYv8MXYs5zfOyDY7jRIcgI7-vpuScCzS9EuaP4vy_-PnbEIu2apsc227-dXy5u4wbbUOXkqDoKQW_Wa7ElupSYnRjKKqckH9I2Gvzw-Sfix1VAZL8ERxtI-GiMNRONv1kV6PbWlrQ">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Sem Culpa
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Zero Açúcar, Sem Glúten &amp; Diet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Adoçantes naturais (Stevia/Taumatina), farinhas low carb (amêndoas, coco), chocolates nobres 70% e doces sem adição de açúcar.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Zero Açúcar</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Low Carb</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20ver%20as%20op%C3%A7%C3%B5es%20Zero%20A%C3%A7%C3%BAcar%20e%20Sem%20Gl%C3%BAten." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Card 5: Temperos & Ervas 100% Puros -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant piles of pure golden turmeric curcumin, fresh chimichurri herbs, lemon pepper and whole spices presented on clay dishes in natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZenYRWsYhQ-V5041Zdt41iYuJvQd-ndGcRFVhZy5KYrka6qEEsPXwEvNKUgMWuvguIggajIhvAfqKGwPy3z9uQhmUWJAzqqFM3863u0i3OZbtozvV9XRY4UAWcKXbL3tKM3K1TnLJBWNrhcXKzZDTdul6V-LPLZXqXExoVAWwQFl6YyfhUBrYcuyFAuIR6zr1BTlvjh03sU_27lTQlXLiTQgy3j7Oj5WK_YfAams">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-tertiary-container font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Sem Sódio &amp; Puros
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Temperos &amp; Ervas 100% Puros</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Cúrcuma pura com pimenta preta para melhor absorção, Chimichurri artesanal sem sal, Lemon Pepper e páprica defumada de verdade.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Anti-inflamatório</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Sem Conservantes</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Quero%20conhecer%20os%20temperos%20puros%20sem%20s%C3%B3dio." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Card 6: Suplementação Leve & Bem-Estar -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-44 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Natural wellbeing supplements including pure green propolis extract bottle with dropper, hydrolyzed collagen powder jar, and golden omega 3 capsules on clean marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK677GJFud66HsFW4R58Op4h3F7d_Vq79QHencewTEmLMXcdeh-X3e0u06hbpj4xzGDavM95a9KURmPlicqyih5dsK91SdAMcznl7I_8eAh-nBWPtiiB72jHZ0bhVgkgBcPp6sjpxCs2_Wa7rCpwsDmRhqtXncFAnzYTvqVxSMSX-Fdxzp_D_D2ypTh9H4q80IpFtHbUMYP4lnGfKu5INMmWQ2KdyqEP7mN2yBLMQ">
+<span class="absolute top-3 left-3 px-space-sm py-1 bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold rounded-full shadow-sm">
+            Imunidade &amp; Beleza
+          </span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Suplementação Leve &amp; Bem-Estar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Colágeno hidrolisado com Verisol, Própolis verde alcoólico e aquoso, Spirulina pura, Ômega 3 e Magnésio de alta biodisponibilidade.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Vitalidade</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant rounded-full text-label-sm font-label-sm">Pele Firme</span>
+</div>
+<a class="mt-space-xs flex items-center justify-center gap-space-xs h-11 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20os%20suplementos%20(Col%C3%A1geno,%20Pr%C3%B3polis,%20Magn%C3%A9sio)." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Pedir pelo WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- COMO FUNCIONA O ATENDIMENTO PERSONALIZADO NO WHATSAPP -->
+<section class="px-margin py-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs text-center max-w-sm mx-auto">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Simples, Rápido e Humano</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Como Funciona Nosso Atendimento</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Você não precisa entender tudo de nutrição. Nós ajudamos você em cada etapa com atenção individual.
+      </p>
+</div>
+<!-- Stepper Timeline -->
+<div class="flex flex-col gap-space-md relative">
+<!-- Step 1 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center shrink-0">
+          1
+        </div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Você nos chama no WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Conta o que está buscando: emagrecer, desinchar, melhorar o intestino ou apenas lanches mais saudáveis para o trabalho.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center shrink-0">
+          2
+        </div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Nossa equipe te orienta com carinho</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Indicamos os melhores produtos naturais de acordo com o seu perfil, seu orçamento e sua rotina aqui em Cáceres.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg bg-surface rounded-2xl shadow-sm flex items-start gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-title-md text-title-md flex items-center justify-center shrink-0">
+          3
+        </div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">Separamos fresquinho para você</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Tudo embalado com higiene no mesmo dia para entrega expressa na sua casa ou retirada rápida na nossa loja no centro.
+          </p>
+</div>
+</div>
+</div>
+<!-- Stepper CTA -->
+<a class="flex items-center justify-center gap-space-sm h-14 bg-primary text-on-primary font-title-md text-title-md rounded-full shadow-[0_10px_25px_-5px_rgba(49,99,66,0.3)] active:scale-95 transition-all" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20iniciar%20uma%20conversa%20sem%20compromisso%20para%20conhecer%20os%20produtos." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span>Iniciar conversa sem compromisso</span>
+</a>
+</section>
+<!-- DEPOIMENTOS DE CLIENTES LOCAIS DE CÁCERES -->
+<section class="px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Histórias Reais de Cáceres</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Quem experimentou, amou</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Resultados leves, sem fome e com o acolhimento que nossa cidade merece.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Testimonial 1 -->
+<div class="p-space-lg bg-secondary-container/40 rounded-3xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover bg-surface" data-alt="Portrait of Mariana Silveira smiling happily in warm natural sunlight wearing casual natural outfit in Cáceres MT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2TvE5PZ8LVFqewVd3fy70ptPIx8GJhXUF3kDfGqygGTEJMIuQiXy6OYfvPvNThqBU4K-AayvFfEQ3zkcDA_RsRG-uXTwHtbOepjWWInkH-kriC7MnrvZRnZv5GAVxgZ1VoSL7DHLH1HzxTUst7HVkfwROSNsbm75a9mMC5IH0-XQdWgjnAR-vnUTMbw7bTt2yFqaZzFmitaJG1hz1TyexgpWyOqPSnm5hvG7kv0Y">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mariana S.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bairro Cavalhada · Cáceres</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+          "Sempre tive problema com inchaço por causa do calor de Cáceres. Chamei a Mais Saúde no WhatsApp e me sugeriram um blend de cavalinha e hibisco junto com psyllium. Desinchei em poucos dias sem ter que parar de comer o que gosto. O atendimento é nota 10!"
+        </p>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-space-lg bg-surface-container-low rounded-3xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover bg-surface" data-alt="Portrait of Cláudio Mendes smiling in daylight in downtown Cáceres natural neighborhood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaEh3jN8KPVhE-8D2jP8RGvBvYkTu2kk45zwVykELDXu2OJP7AH2mXRCIdE9LfknqdPiXW_cBgcJUQSfhXdnQsamKEvcBBVK1PobxlhP7ijI6l1saXp7gcgHubh75mOjgL7qHLrPWw_FlF6Q34DWLJNndsoPPLUFVcOXMJ17VTM2JV4DR3zND0SV39IdBsdHO5ubescx6xnBvtkwXAeLJHzsJtMu2IXbWeV4pJ_9A">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Cláudio M.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Centro · Cáceres</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+          "A facilidade de pedir pelo WhatsApp e passar na loja só para pegar meu pacote pronto me economiza muito tempo. A Castanha-do-Pará é a mais fresca e crocante que já comi aqui na região. Recomendo de olhos fechados."
+        </p>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-space-lg bg-secondary-container/40 rounded-3xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover bg-surface" data-alt="Portrait of Luciana Duarte smiling relaxed in a garden setting, healthy lifestyle advocate Cáceres MT" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlqU02lU0o_2XGFx7yDZ0HD1-Dmv-BMKTxy-xnFzgeeOKGwOqwKpwkyOScwg6mPvJzjkIrAFQo4fgLG75HZwdAkUsQge0PND4cCccBPlRbwu9r1caxND3vV4C1mG5gpzpxIFnANwNqGy5a3DyW-moNzuoQgoZmLqFRRFQFj1qd2bZExZbXI1N_X25F0bRIU1Nykn_6BLCQbUuKRj1GxYI7LDmon-jG3W0-nQzpIEA">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Luciana D.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DNER · Cáceres</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+          "Eu vivia recaindo em dietas super restritivas e depois engordava o dobro. As meninas da Mais Saúde me ensinaram a trocar o açúcar por Taumatina e incluir chia nos lanches. Perdi 6kg em 2 meses de forma muito natural!"
+        </p>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LOCALIZAÇÃO E CONVENIÊNCIA EM CÁCERES -->
+<section class="px-margin py-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">pin_drop</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">No Coração da Cidade</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Nossa Loja em Cáceres</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Venha nos visitar no centro de Cáceres ou receba no conforto da sua casa com agilidade.
+      </p>
+</div>
+<!-- Map representation card -->
+<div class="flex flex-col bg-surface rounded-3xl overflow-hidden shadow-sm">
+<div class="w-full h-56 bg-surface-container bg-cover bg-center relative" data-location="Rua Coronel José Dulce, Centro, Cáceres - MT, Brasil">
+<div class="absolute inset-0 bg-primary/10"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-md py-1.5 rounded-full flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">store</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Loja Física · Fácil Estacionamento</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md">Rua Coronel José Dulce, Centro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cáceres - MT (Próximo à Praça Barão do Rio Branco)</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold">Horário de Funcionamento:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Segunda a Sexta: 07:30 às 18:00 (direto)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sábado: 07:30 às 12:30</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="flex items-center justify-center gap-space-xs h-12 bg-primary text-on-primary rounded-full font-label-lg text-label-lg shadow-sm active:scale-98 transition-transform" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20se%20entregam%20hoje%20no%20meu%20bairro." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Conversar no WhatsApp</span>
+</a>
+<a class="flex items-center justify-center gap-space-xs h-12 bg-surface-container text-on-surface rounded-full font-label-lg text-label-lg active:scale-98 transition-transform" href="https://maps.google.com/?q=Rua+Coronel+Jose+Dulce+Centro+Caceres+MT" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+<span>Ver endereço no Google Maps</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ / DÚVIDAS FREQUENTES -->
+<section class="px-margin py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Tire Suas Dúvidas</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Perguntas Frequentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Tudo o que você precisa saber para comprar com total tranquilidade.
+      </p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- Item 1 -->
+<details class="group p-space-md bg-surface-container-low rounded-2xl shadow-sm transition-all open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface gap-space-sm">
+<span>Como funciona a entrega em Cáceres?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-sm leading-relaxed">
+          Entregamos em todos os bairros de Cáceres com motoboy de confiança. Você faz o pedido pelo WhatsApp até às 16h e recebe fresquinho no mesmo dia no conforto de casa ou do trabalho.
+        </p>
+</details>
+<!-- Item 2 -->
+<details class="group p-space-md bg-surface-container-low rounded-2xl shadow-sm transition-all open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface gap-space-sm">
+<span>Posso comprar a granel qualquer quantidade?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-sm leading-relaxed">
+          Sim! Você tem total liberdade. Pesamos a partir de 50g para você levar exatamente o que precisa para a sua receita ou consumo semanal, evitando desperdício e economizando.
+        </p>
+</details>
+<!-- Item 3 -->
+<details class="group p-space-md bg-surface-container-low rounded-2xl shadow-sm transition-all open:bg-surface-container">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface gap-space-sm">
+<span>Vocês ajudam a escolher os melhores chás para inchaço?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-sm leading-relaxed">
+          Com certeza! Nossa equipe é treinada para entender seu objetivo e indicar os melhores blends de ervas puras diuréticas, digestivas ou relaxantes que combinam com você.
+        </p>
+</details>
+<!-- Item 4 -->
+<details class="group p-space-md bg-surface-container-low rounded-2xl shadow-sm transition-all open:bg-space-md">
+<summary class="flex justify-between items-center cursor-pointer list-none font-title-md text-title-md text-on-surface gap-space-sm">
+<span>Quais são as formas de pagamento aceitas?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-sm leading-relaxed">
+          Aceitamos Pix rápido com chave direta, cartões de crédito e débito de todas as bandeiras (inclusive levamos a maquininha na entrega) e dinheiro em espécie.
+        </p>
+</details>
+</div>
+</section>
+<!-- CTA FINAL DE ALTO IMPACTO (Fundo verde folha acolhedor) -->
+<section class="px-margin py-space-xl mx-margin mb-space-lg rounded-[32px] bg-primary text-on-primary flex flex-col gap-space-lg text-center items-center relative overflow-hidden shadow-lg">
+<!-- Ambient leaf graphics -->
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-primary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-40 h-40 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs max-w-sm">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container mx-auto mb-1">
+<span class="material-symbols-outlined text-[26px]">favorite</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary">
+        Pronta para transformar sua saúde com leveza?
+      </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+        Clique abaixo e receba nossa orientação personalizada pelo WhatsApp agora mesmo. É simples, rápido e com todo carinho de Cáceres!
+      </p>
+</div>
+<div class="relative z-10 w-full flex flex-col gap-space-xs">
+<a class="flex items-center justify-center gap-space-sm h-14 w-full bg-surface text-primary font-title-md text-title-md rounded-full shadow-[0_10px_20px_rgba(0,0,0,0.15)] active:scale-95 transition-transform hover:bg-surface-container-lowest" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Estou%20pronta%20para%20come%C3%A7ar%20a%20cuidar%20da%20minha%20sa%C3%BAde%20com%20a%20Mais%20Sa%C3%BAde." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary text-[24px]">chat</span>
+<span>Quero ajuda no WhatsApp agora</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-primary-container opacity-90">
+        Atendimento rápido de Segunda a Sábado
+      </span>
+</div>
+</section>
+</div><footer class="mt-margin-md bg-surface-container-low px-margin py-space-xl"><div class="flex flex-col gap-space-md max-w-lg mx-auto"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[24px]">spa</span><h3 class="font-title-md text-title-md text-primary">Mais Saúde Produtos Naturais</h3></div><p class="font-body-sm text-body-sm text-on-surface-variant">Promovendo vitalidade leve, emagrecimento consciente e nutrição acolhedora no Pantanal mato-grossense.</p><div class="flex flex-col gap-space-xs pt-space-xs"><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">location_on</span><span class="font-body-sm text-body-sm">Rua Coronel José Dulce, Centro — Cáceres - MT</span></div><div class="flex items-start gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-tertiary text-[20px] shrink-0">schedule</span><span class="font-body-sm text-body-sm">Segunda a Sexta: 07:30 às 18:00 | Sábado: 07:30 às 12:00</span></div></div><div class="pt-space-sm flex items-center justify-between flex-wrap gap-space-sm"><a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant" href="https://wa.me/5565999999999" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span>Falar com Atendente / Consultoria de Produtos</span></a><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-secondary-container text-on-secondary-container rounded-full"><span class="material-symbols-outlined text-[16px]">favorite</span><span class="font-label-sm text-label-sm">Feito com carinho local</span></div></div></div></footer></main><aside class="fixed right-margin bottom-20 z-50 flex items-center gap-space-xs pointer-events-auto"><div class="hidden xs:flex items-center gap-1.5 px-space-sm py-1 bg-surface/95 backdrop-blur-md border border-secondary-container rounded-full shadow-md text-on-surface pointer-events-none"><span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse shrink-0"></span><span class="font-label-sm text-label-sm font-semibold text-primary">Online · Tire dúvidas</span></div><a aria-label="Conversar no WhatsApp da Mais Saúde" class="relative group flex items-center justify-center w-14 h-14 rounded-full shadow-[0_10px_25px_-5px_rgba(37,211,102,0.45)] active:scale-95 transition-all" href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20produtos%20da%20Mais%20Sa%C3%BAde." rel="noopener noreferrer" style="background-color: #25D366;" target="_blank"><span class="absolute -top-0.5 -right-0.5 flex h-3.5 w-3.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span><span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-600 border-2 border-white"></span></span><svg class="w-7 h-7 fill-white drop-shadow-sm" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg></a></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">eco</span><span class="font-label-sm text-label-sm">Início</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="catalogo-de-produtos" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Catálogo</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="chas-e-emagrecimento" href="#"><span class="material-symbols-outlined text-[22px]">local_cafe</span><span class="font-label-sm text-label-sm">Chás &amp; Diet</span></a><a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors" data-path="nossa-loja-em-caceres" href="#"><span class="material-symbols-outlined text-[22px]">pin_drop</span><span class="font-label-sm text-label-sm">Cáceres</span></a></div></nav>
+
+</body></html>
